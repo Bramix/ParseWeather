@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="344.0" styleClass="background" stylesheets="@Styles/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ComboBox fx:id="weekend" layoutY="2.0" onAction="#reload" prefHeight="31.0" prefWidth="306.0" styleClass="comboBox" stylesheets="@Styles/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="weather" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="31.0" prefHeight="28.0" prefWidth="323.0" styleClass="label-bright" text="Ясно" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" fill="#972c2c" layoutX="255.0" layoutY="134.0" startX="-100.0" stroke="WHITE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="181.0" prefHeight="28.0" prefWidth="323.0" styleClass="label-bright" stylesheets="@Styles/style.css" text="Сумы" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="site" alignment="CENTER" layoutY="217.0" mnemonicParsing="false" onAction="#getSite" prefHeight="25.0" prefWidth="306.0" text="Подробнее" textFill="#724c4c" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="site1" layoutY="221.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="333.0" text="Выход" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label fx:id="temperature" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="132.0" layoutY="113.0" prefHeight="21.0" prefWidth="178.0" styleClass="label-bright" AnchorPane.rightAnchor="12.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="sun" fitHeight="131.0" fitWidth="171.0" layoutX="5.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="59.0">
+         <viewport>
+            <Rectangle2D height="112.0" width="152.0" />
+         </viewport>
+      </ImageView>
+   </children>
+</AnchorPane>
