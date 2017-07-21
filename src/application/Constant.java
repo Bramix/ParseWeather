@@ -11,6 +11,8 @@ private final String cloudSunAndRain = "Облачно с прояснениями, дождь";
 private final String cloudSunAndRain2 = "Сплошная облачность, мелкий дождь";
 private final String cloudSunAndRain3 = "Сплошная облачность, дождь";
 private final String cloudSunAndRain4 = "Сплошная облачность, сильный дождь";
+private final String cloudSunAndRain5 = "Переменная облачность, дождь";
+private final String cloudSunAndRain6 = "Переменная облачность, мелкий дождь";
 private final String cloudAndSun = "Облачно с прояснениями";
 private final String cloudAndSun2 = "Переменная облачность";
 private final String cloudAndSun3 = "Небольшая облачность";
@@ -40,6 +42,8 @@ private IconsResource icon = new IconsResource();
 		case cloudSunAndRain2:
 		case cloudSunAndRain3:
 		case cloudSunAndRain4:
+		case cloudSunAndRain5:
+		case cloudSunAndRain6:
 			return icon.getSunAndRain();
 		case cloudAndSun:
 		case cloudAndSun2:
